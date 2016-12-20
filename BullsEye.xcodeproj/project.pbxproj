@@ -42,6 +42,7 @@
 				D9971E701E09335300C4FDFB /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		D9971E701E09335300C4FDFB /* Products */ = {
 			isa = PBXGroup;
