@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        startNewRound()
+        startNewGame()
         updateLabels()
     }
 
@@ -70,6 +70,17 @@ class ViewController: UIViewController {
     @IBAction func sliderMoved(_ slider: UISlider) {
 //        print("The value of the slider is now: \(slider.value)")
         currentValue = lroundf(slider.value)
+    }
+    
+    @IBAction func reseGame() {
+        startNewGame()
+        updateLabels()
+    }
+    
+    func startNewGame() {
+        score = 0
+        round = 0
+        startNewRound()
     }
     
     func startNewRound() {
