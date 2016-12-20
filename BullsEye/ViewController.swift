@@ -11,9 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     var currentValue: Int = 0
     var targetValue: Int = 0
+    var score = 0
     
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
 
     override func viewDidLoad() {
@@ -30,9 +32,12 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
         let difference = abs(currentValue - targetValue)
-        let message: String = "The value of the slider is: \(currentValue)\n" +
-                              "The target value is: \(targetValue)\n" +
-                              "The difference is: \(difference)"
+        let points = 100 - difference
+        score += points
+//        let message: String = "The value of the slider is: \(currentValue)\n" +
+//                              "The target value is: \(targetValue)\n" +
+//                              "The difference is: \(difference)"
+        let message = "Your score is \(points) points."
         let alert = UIAlertController(title: "Hello world",
                                       message: message,
                                       preferredStyle: .alert)
@@ -57,6 +62,7 @@ class ViewController: UIViewController {
     
     func updateLabels() {
         targetLabel.text = String(targetValue)
+        scoreLabel.text = String(score)
     }
 }
 
