@@ -300,6 +300,7 @@
 				D9971E831E09335300C4FDFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
