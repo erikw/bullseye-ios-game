@@ -70,7 +70,8 @@ class ViewController: UIViewController {
             title = "You suck"
         }
 
-        let message = "Your score is \(points) points."
+        let message = "Your score is \(points) points.\n" +
+                      "You hit the value: \(currentValue)"
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: .alert)
