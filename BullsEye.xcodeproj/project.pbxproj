@@ -103,6 +103,7 @@
 				TargetAttributes = {
 					D9971E6E1E09335300C4FDFB = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 2UVQ3C3H8E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UVQ3C3H8E;
 				INFOPLIST_FILE = BullsEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.2r.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,7 +276,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UVQ3C3H8E;
 				INFOPLIST_FILE = BullsEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.2r.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
